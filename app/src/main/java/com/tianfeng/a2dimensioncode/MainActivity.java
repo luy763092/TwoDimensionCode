@@ -5,6 +5,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
+
 import com.google.zxing.client.android.CaptureActivity;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
@@ -29,7 +31,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         int id = view.getId();
         switch(id){
             case R.id.btn_scan:
+                Toast.makeText(this,"你可以扫描条码和二维码了",Toast.LENGTH_LONG).show();
                 Intent startScan = new Intent(MainActivity.this,CaptureActivity.class);
+                startActivity(startScan);
                 break;
             default:
                 break;

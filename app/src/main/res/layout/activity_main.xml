@@ -1,14 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:gravity="center"
-    android:orientation="vertical"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
 
     <Button
-        android:layout_margin="10dp"
         android:id="@+id/btn_scan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="扫描二维码"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/et_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="请在此输入140字符"
+        android:maxLines="4" />
+
+    <Button
+        android:layout_marginTop="10dp"
+        android:id="@+id/btn_make"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="点我生成二维码"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:id="@+id/iv_image"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="扫描二维码" />
+        android:layout_marginTop="100dp"
+        android:src="@drawable/ic_user_image" />
 </LinearLayout>
