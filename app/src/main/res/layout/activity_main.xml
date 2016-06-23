@@ -14,19 +14,27 @@
         android:textColor="@android:color/holo_red_dark"
         android:textSize="20sp" />
 
-    <EditText
+    <TextView
         android:id="@+id/et_text"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="40dp"
         android:layout_marginTop="10dp"
-        android:hint="请在此输入140字符"
+        android:gravity="center|left"
+        android:hint="扫描结果" />
+
+    <EditText
+        android:id="@+id/et_input"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:hint="请输入编码内容"
         android:maxLines="4" />
 
     <Button
-        android:layout_marginTop="10dp"
         android:id="@+id/btn_make"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
         android:text="点我生成二维码"
         android:textSize="20sp" />
 
