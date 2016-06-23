@@ -30,6 +30,8 @@ import android.preference.Preference;
 import android.preference.PreferenceFragment;
 import android.preference.PreferenceScreen;
 
+import com.tianfeng.zxinglibrary.R;
+
 /**
  * Implements support for barcode scanning preferences.
  *

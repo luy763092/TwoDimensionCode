@@ -21,6 +21,8 @@ import android.os.Bundle;
 import android.view.KeyEvent;
 import android.webkit.WebView;
 
+import com.tianfeng.zxinglibrary.R;
+
 /**
  * An HTML-based help screen.
  *

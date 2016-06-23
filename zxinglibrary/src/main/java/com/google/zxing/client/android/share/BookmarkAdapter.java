@@ -18,7 +18,6 @@ package com.google.zxing.client.android.share;
 
 import java.util.List;
 
-import com.google.zxing.client.android.R;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -27,6 +26,8 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+
+import com.tianfeng.zxinglibrary.R;
 
 /**
  * A custom adapter designed to fetch bookmarks from a cursor. Before Honeycomb we used

@@ -16,9 +16,9 @@
 
 package com.google.zxing.client.android.result;
 
-import com.google.zxing.client.android.R;
 import com.google.zxing.client.result.GeoParsedResult;
 import com.google.zxing.client.result.ParsedResult;
+import com.tianfeng.zxinglibrary.R;
 
 import android.app.Activity;
 
@@ -28,7 +28,7 @@ import android.app.Activity;
  * @author dswitkin@google.com (Daniel Switkin)
  */
 public final class GeoResultHandler extends ResultHandler {
-  private static final int[] buttons = {
+  private static final int[] Buttons = {
       R.string.button_show_map,
       R.string.button_get_directions
   };
@@ -39,12 +39,12 @@ public final class GeoResultHandler extends ResultHandler {
 
   @Override
   public int getButtonCount() {
-    return buttons.length;
+    return Buttons.length;
   }
 
   @Override
   public int getButtonText(int index) {
-    return buttons[index];
+    return Buttons[index];
   }
 
   @Override

@@ -20,8 +20,8 @@ import android.content.Context;
 import android.widget.TextView;
 import com.google.zxing.client.android.HttpHelper;
 import com.google.zxing.client.android.history.HistoryManager;
-import com.google.zxing.client.android.R;
 import com.google.zxing.client.result.URIParsedResult;
+import com.tianfeng.zxinglibrary.R;
 
 import java.io.IOException;
 import java.net.URI;

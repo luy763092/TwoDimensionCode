@@ -27,7 +27,8 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.ListAdapter;
-import com.google.zxing.client.android.R;
+
+import com.tianfeng.zxinglibrary.R;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -95,7 +96,7 @@ final class LoadPackagesAsyncTask extends AsyncTask<Object,Object,List<AppInfo>>
   @Override
   protected void onPostExecute(final List<AppInfo> results) {    
     ListAdapter listAdapter = new ArrayAdapter<AppInfo>(activity, 
-                                                        R.layout.app_picker_list_item, 
+                                                        R.layout.app_picker_list_item,
                                                         R.id.app_picker_list_item_label, 
                                                         results) {
       @Override

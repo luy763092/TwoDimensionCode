@@ -16,9 +16,9 @@
 
 package com.google.zxing.client.android.result;
 
-import com.google.zxing.client.android.R;
 import com.google.zxing.client.result.AddressBookParsedResult;
 import com.google.zxing.client.result.ParsedResult;
+import com.tianfeng.zxinglibrary.R;
 
 import android.app.Activity;
 import android.graphics.Typeface;

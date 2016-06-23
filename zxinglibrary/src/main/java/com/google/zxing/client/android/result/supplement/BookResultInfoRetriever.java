@@ -24,13 +24,13 @@ import android.content.Context;
 import android.widget.TextView;
 import com.google.zxing.client.android.HttpHelper;
 import com.google.zxing.client.android.LocaleManager;
-import com.google.zxing.client.android.R;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 import org.json.JSONTokener;
 
 import com.google.zxing.client.android.history.HistoryManager;
+import com.tianfeng.zxinglibrary.R;
 
 /**
  * @author Kamil Kaczmarczyk
