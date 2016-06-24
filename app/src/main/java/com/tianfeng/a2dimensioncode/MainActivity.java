@@ -47,13 +47,15 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         switch(id){
             case R.id.btn_scan:
                 Toast.makeText(this,"你可以扫描条码和二维码了",Toast.LENGTH_SHORT).show();
-                Intent startScan = new Intent(MainActivity.this,CaptureActivity.class);
+                Intent openCameraIntent = new Intent(MainActivity.this,CaptureActivity.class);
+                //Intent startScan = new Intent(MainActivity.this,CaptureActivity.class);
                 //startActivity(startScan);
-                startActivityForResult(startScan,0);
+                startActivityForResult(openCameraIntent,0);
                 break;
             case R.id.btn_make:
                 Toast.makeText(this,"生成二维码",Toast.LENGTH_SHORT).show();
-                Bitmap reqbmp;
+                Intent makeDimension = new Intent(MainActivity.this,DimensionActivity.class);
+                startActivity(makeDimension);
                 break;
             default:
                 break;
@@ -63,7 +65,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
-        if(requestCode == RESULT_OK){
+        if(requestCode == RESULT_OK && data != null){
             String result = data.getExtras().getString("result");
             mEtText.setText(result);
         }
